@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="text-gray-600 body-font sticky top-0  z-10 border-b-slate-200 border-b" style={{ backgroundColor: '#000' }}>
+        <header className="text-gray-600 body-font sticky top-0  z-10 " style={{ backgroundColor: 'rgb(0 0 0 / 85%)' }}>
             <div className="w-full flex px-4 py-2 items-center justify-between">
                 <Link to="/" className="text-2xl title-font font-medium items-center text-white" style={{letterSpacing: '5px'}}>SCEM</Link>
 

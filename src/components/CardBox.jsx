@@ -1,26 +1,49 @@
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, ButtonGroup, Button } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, ButtonGroup, Button, Box } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 const CardBox = ({ id, name, url, image }) => {
     return (
-        <Card maxW='sm'>
+        <Card
+            maxW='sm'
+            bg={'#400072'}
+        >
             <CardBody>
-                <Image
-                    src={"https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}
-                    alt='Green double couch with wooden legs'
-                    borderRadius='lg'
-                />
-                <Button
+                <Box pos={'relative'}>
+                    <Image
+                        w={'100%'}
+                        aspectRatio={1}
+                        src={image || 'ideation.jpeg'}
+                        alt={name}
+                        borderRadius='lg'
+                    />
+
+                    <Box
+                        as={Link}
+                        to={url}
+                        bg={'rgb(255 151 0)'}
+                        color={'black'}
+                        position={'absolute'}
+                        bottom={30}
+                        left={0}
+                        fontWeight={'bold'}
+                        // fontSize={'2xl'}
+                        p={'0.5rem 1.5rem'}
+                        transition={'all 0.2s ease'}
+                        _hover={{
+                            color: 'white',
+                        }}
+                    >
+                        Register
+                    </Box>
+                </Box>
+                <Text
+                    color={'#fff'}
+                    fontFamily={"'Young Serif', serif"}
                     my={2}
-                    variant='solid'
-                    colorScheme='orange'
-                    as={Link}
-                    to={url}
                 >
-                    Buy now
-                </Button>
-                <Text my={2}>{name}</Text>
+                    {name}
+                </Text>
             </CardBody>
 
         </Card>
