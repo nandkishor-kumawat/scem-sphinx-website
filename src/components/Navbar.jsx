@@ -17,9 +17,9 @@ const Navbar = () => {
                 <Hide below='540px'>
                     <div className='flex items-center gap-4 px-3'>
                         {/* <Link className={`hover:text-[#4FA4F4] ${useMatch('/') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white`} to="/">Home</Link> */}
-                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/events') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white`} to="/events">Events</Link>
-                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/schedule') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white`} to="/schedule">Schedule</Link>
-                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/about-us') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white`} to="/about-us">About Us</Link>
+                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/events') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/events">Events</Link>
+                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/schedule') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/schedule">Schedule</Link>
+                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/about-us') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/about-us">About Us</Link>
                     </div>
                 </Hide>
 

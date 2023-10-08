@@ -8,7 +8,9 @@ const CardBox = ({ id, name, url, image }) => {
             maxW='sm'
             bg={'#400072'}
         >
-            <CardBody>
+            <CardBody
+            p={1}
+            >
                 <Box pos={'relative'}>
                     <Image
                         w={'100%'}
@@ -41,6 +43,7 @@ const CardBox = ({ id, name, url, image }) => {
                     color={'#fff'}
                     fontFamily={"'Young Serif', serif"}
                     my={2}
+                    px={2}
                 >
                     {name}
                 </Text>

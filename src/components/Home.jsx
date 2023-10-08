@@ -12,9 +12,10 @@ const Home = () => {
                 width={'100%'}
                 height={'calc(100vh - 48px)'}
                 flex={1}
-                backgroundImage={'3286718.jpg'}
+                backgroundImage={'24.jpg'}
+                backgroundSize={'cover'}
             >
-                <Image src='scem.png' alt='SCEM' width='100%' height='100%' />
+                <Image src='scem.svg' alt='SCEM' width='100%'  />
             </Flex>
 
             <Box
@@ -24,7 +25,7 @@ const Home = () => {
                 {/* About Section */}
                 <Box
                     marginY={5}
-                    backgroundImage={'5375775.jpg'}
+                    // backgroundImage={'5375775.jpg'}
                 >
                     <Heading
                         as={'h1'}

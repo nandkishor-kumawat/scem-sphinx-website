@@ -27,6 +27,7 @@ const Schedule = () => {
       justifyContent={'center'}
       alignItems={'center'}
       // py={5}
+      px={5}
       // height={'100%'}
       flex={1}
       backgroundImage={'3286718.jpg'}
@@ -39,7 +40,7 @@ const Schedule = () => {
         p={5}
         maxW={'lg'}
         width={'100%'}
-        height={'85vmin'}
+        min-height={'calc(100vh - 100px)'}
         direction={'column'}
       >
         <Heading
@@ -53,7 +54,7 @@ const Schedule = () => {
 
         <Flex
           direction={'column'}
-          // gap={15}
+          gap={10}
           justifyContent={'space-around'}
           flex={1}
         >
