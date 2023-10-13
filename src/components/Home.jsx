@@ -66,7 +66,21 @@ const Home = () => {
                         <Text
                             maxW={'xl'}
                             textAlign={'justify'}
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi corporis blanditiis veritatis nesciunt, quisquam modi debitis ipsam. Maiores ducimus numquam reprehenderit excepturi quibusdam debitis culpa totam vitae doloremque quasi fugiat sunt iusto, quo officia a eaque libero vel delectus! Cum vero odit architecto molestias voluptates asperiores odio esse. Quia qui pariatur hic, ipsum velit aperiam quos, amet aliquid optio, corporis eos non quam! </Text>
+                        >
+                            Welcome to YANTRAKRITI
+                            2023, a place where
+                            technical brilliance meets
+                            creativity! A celebration of
+                            innovation, wisdom and
+                            cutting-edge technology,
+                            YANTRAKRITI : Innovating
+                            the World of Engineering.
+                            Join us for a day jam-
+                            packed with engaging
+                            events designed for
+                            engineering enthusiasts
+                            across the board.
+                        </Text>
 
                         <Button
                             as={Link}
