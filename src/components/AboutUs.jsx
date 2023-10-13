@@ -1,6 +1,8 @@
-import { Box, Center, Container, Flex, Grid, GridItem, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Grid, GridItem, Heading, Icon, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import Profile from './Profile'
+import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
 
@@ -13,7 +15,7 @@ const AboutUs = () => {
     },
     {
       src: './members/shagun.jpg',
-      name: 'Shagun Shrivastava',
+      name: 'Shagun Srivastava',
       position: 'Joint Secretary'
     },
     {
@@ -162,10 +164,11 @@ const AboutUs = () => {
               <Flex
                 alignItems={'center'}
                 justifyContent={'space-between'}
-                gap={1}
+                gap={2}
               >
                 <Box
                 // w={200}
+                textAlign={'right'}
                 >
                   <Text color={'#fff'} >Dr. Amit Kumar</Text>
                   <Text color={'#fff'} >Faculty Coordinator</Text>
@@ -178,16 +181,21 @@ const AboutUs = () => {
                   alignItems={'center'}
                   direction={'column'}
                   width={200}
-                // gap={5}
+                  aspectRatio={1}
+                  overflow={'hidden'}
+                  cursor={'pointer'}
+                  borderRadius={28}
+                  border={'3px solid #e350e17a'}
                 >
                   <Image
                     src={'./members/amit.jpg'}
                     width={200}
-                    aspectRatio={1}
-                    borderRadius={'20px'}
-                    border={'3px solid #fc9cf9'}
+                    transition={'all 0.15s ease-in-out'}
+                    _hover={{
+                        transform: 'scale(1.1)'
+                    }}
                   />
-           
+
                 </Flex>
               </Flex>
             </Flex>
@@ -214,6 +222,47 @@ const AboutUs = () => {
                 ))
               }
             </Grid>
+
+
+            <Flex
+              gap={6}
+              justifyContent={'center'}
+            >
+              <Link to={'https://www.facebook.com/scem.mnit'}>
+                <Icon
+                  as={BsFacebook}
+                  color={'#fff'}
+                  fontSize={26}
+                  transition={'all 0.1s ease-in'}
+                  _hover={{
+                    color: '#3576dd'
+                  }}
+                />
+              </Link>
+              <Link to={'https://www.linkedin.com/company/scem-society-of-civil-engineers-mnit/'}>
+                <Icon
+                  as={BsLinkedin}
+                  color={'#fff'}
+                  fontSize={26}
+                  transition={'all 0.1s ease-in'}
+                  _hover={{
+                    color: '#3866ad',
+                  }}
+                />
+              </Link>
+              <Link to={'https://instagram.com/scem.mnit'}>
+                <Icon
+                  as={BsInstagram}
+                  color={'#fff'}
+                  fontSize={26}
+                  transition={'all 0.1s ease-in'}
+                  _hover={{
+                    color: '#a6429e',
+                  }}
+                />
+              </Link>
+
+            </Flex>
           </Box>
         </Box>
       </Container>

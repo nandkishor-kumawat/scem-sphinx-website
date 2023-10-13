@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "yarn build && firebase deploy --only hosting"
+    "deploy": "yarn build && firebase deploy --only hosting:scem-sp"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
@@ -17,7 +17,7 @@
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.13.0",
     "react-select": "^5.7.3"
   },

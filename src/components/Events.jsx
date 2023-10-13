@@ -10,32 +10,44 @@ const Events = () => {
             id: 1,
             name: 'PANEL DISCUSSION',
             url: '',
-            image: './panel.jpeg'
+            image: './posters/panel.jpeg'
         },
         {
             id: 2,
             name: 'IDEATION COMPETITION',
             url: 'https://forms.gle/T25apLudVwVvGrBP9',
-            image: './ideation.jpeg'
+            image: './posters/ideation.jpeg'
         },
         {
             id: 3,
             name: 'CIVINNO CONCLAVE',
             url: 'https://docs.google.com/forms/d/e/1FAIpQLSfFC9DjvbMetzeWdSbbRAzYFntKCGALiZe5FiOpONONEplA-g/viewform?usp=sf_link',
-            image: './conclave.jpeg'
+            image: './posters/conclave.jpeg'
         },
         {
             id: 4,
             name: 'CONSTRUCTION EVENT',
-            url: '',
-            image: './construction.jpeg'
+            url: 'https://forms.gle/r8bmRyA9Gs6yMwxU9',
+            image: './posters/construction.jpeg'
         },
         {
             id: 5,
             name: 'FUN AND GAMES',
             url: 'https://forms.gle/V4G9zv8AnajDDbbd9',
-            image: './fun_game.jpeg'
-        }
+            image: './posters/fun_game.jpeg'
+        },
+        {
+            id: 6,
+            name: 'FUN AND GAMES',
+            url: 'https://forms.gle/V4G9zv8AnajDDbbd9',
+            image: './posters/fun_game2.jpeg'
+        },
+        {
+            id: 7,
+            name: 'FUN AND GAMES',
+            url: 'https://forms.gle/V4G9zv8AnajDDbbd9',
+            image: './posters/fun_game3.jpeg'
+        },
     ]
 
 
@@ -52,7 +64,7 @@ const Events = () => {
                     colorScheme='pink'
                     href='../YANTRAKRITI Brochure.pdf'
                     m={5}
-                >Event Broucher</Button>
+                >Event Brochure</Button>
 
                 <Flex
                     alignItems={'center'}

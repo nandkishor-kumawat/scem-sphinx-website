@@ -17,6 +17,7 @@ const Navbar = () => {
                 <Hide below='540px'>
                     <div className='flex items-center gap-4 px-3'>
                         {/* <Link className={`hover:text-[#4FA4F4] ${useMatch('/') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white`} to="/">Home</Link> */}
+                        <Link className={`hover:text-[#4FA4F4] ${useMatch('/') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/">SCEM</Link>
                         <Link className={`hover:text-[#4FA4F4] ${useMatch('/events') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/events">Events</Link>
                         <Link className={`hover:text-[#4FA4F4] ${useMatch('/schedule') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/schedule">Schedule</Link>
                         <Link className={`hover:text-[#4FA4F4] ${useMatch('/about-us') ? 'border-b-2 border-[#4FA4F4]' : ''} text-white font-bold`} to="/about-us">About Us</Link>
@@ -38,7 +39,7 @@ const Navbar = () => {
 
                                 />
                                 <MenuList bg={'white'} px={2}>
-                                    {/* <MenuItem as={Link} to="/">Home</MenuItem> */}
+                                    <MenuItem as={Link} to="/">SCEM</MenuItem>
                                     <MenuItem as={Link} to="/events">Event</MenuItem>
                                     <MenuItem as={Link} to="/schedule">Schedule</MenuItem>
                                     <MenuItem as={Link} to="/about-us">About Us</MenuItem>
